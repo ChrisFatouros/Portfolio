@@ -81,9 +81,81 @@ animation: skew .5s 1 forwards;
     -moz-text-fill-color: transparent;
 }
 
+/* Cards */
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  position: relative;
+  bottom: -50vh;
+}
 
+.card { 
+  position: relative;
+  display: grid;
+  width: 20vw;
+  height: auto;
+  z-index: 20;
+  align-content: flex-start;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1vw 2vw 2vw 2vw;
+}
 
+.card:hover {
+  animation: slideUp 1s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: .5rem;
+}
+
+.cardSub {
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+  opacity: .75;
+}
+
+.cardDetail {
+  line-height: 1.5rem;
+}
+
+.button {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(9.7px);
+  border-radius: 16px;
+  width: 5vw;
+  padding: .25vw .5vw;
+  text-align: center;
+  align-items: right;
+  margin-top: 2vh;
+  margin-left: auto;
+  transition-duration: .5s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.50);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-15vh);
+  }
+}
 
 
 
@@ -97,7 +169,7 @@ animation: skew .5s 1 forwards;
 /* Footer */
 #vertical {
   position: relative;
-  top: 60vh;
+  top: 20vh;
   z-index: 50;
   writing-mode: vertical-lr;
   letter-spacing: 2px;
