@@ -210,23 +210,8 @@ animation: skew .5s 1 forwards;
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* Footer */
-#vertical {
-  position: relative;
-  z-index: 12;
-  writing-mode: vertical-lr;
-  letter-spacing: 2px;
-  opacity: .75;
-}
+
 
 /* Blob Effects*/
 #blob {
@@ -265,5 +250,71 @@ animation: skew .5s 1 forwards;
 
   to {
       rotate: 360deg;
+  }
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+  html {
+    overflow: visible;
+  }
+
+  body {
+    margin-top: 15vh;
+  }
+
+  #blur, #blob {
+    display: none;
+  }
+
+  main {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+  }
+
+  h1 {
+    display: block;
+    position: relative;
+  }
+
+  header .button {
+
+  }
+
+  .skills {
+    display: block;
+    margin-top: 10vh;
+    margin-bottom: 0;
+    text-align: center;    
+  }
+
+  .icon {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .cards {
+    display: block;
+    margin-top: -15vh;
+  }
+
+  .card {
+    display: block;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+
+  .card:hover {
+    animation: none;
+    animation-fill-mode: none;
+  }
+
+  .button {
+    width: 20vw;
   }
 }
