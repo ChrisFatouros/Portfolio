@@ -80,7 +80,6 @@ animation: skew .5s 1 forwards;
 
 #creative {
   animation: textShine 5s ease-in-out infinite alternate;
-  font-family: ;
   font-size: 1em;
   font-weight: 900;
   margin: 0;
