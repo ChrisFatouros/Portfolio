@@ -16,7 +16,6 @@ const javaIcon = document.getElementById("javaIcon")
 const reactIcon = document.getElementById("reactIcon")
 const skillName = document.getElementById("skillName")
 
-
 htmlIcon.onmouseover = function() {
     skillName.innerHTML = "HTML5";
     skillName.style.color = "#E44D26";
@@ -64,5 +63,3 @@ reactIcon.onmouseout = function() {
     skillName.style.color = "whitesmoke";
     blob.style.background = "linear-gradient(to right, rgb(44, 79, 155), rgb(94, 133, 110))";
 };
-
-
